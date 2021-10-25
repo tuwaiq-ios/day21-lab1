@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day_21" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-Dl-gxC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="166" id="rVb-uK-Z4i" customClass="Cell" customModule="day_21" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="166"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rVb-uK-Z4i" id="33c-a3-DBK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyt-27-Dpz">
+                                                    <rect key="frame" x="17" y="49" width="41.5" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-UY-lLV">
+                                                    <rect key="frame" x="300" y="30" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSw-1F-SNW">
+                                                    <rect key="frame" x="306.5" y="121" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Xyt-27-Dpz" firstAttribute="leading" secondItem="33c-a3-DBK" secondAttribute="leading" constant="17" id="Dzm-Mr-1Qs"/>
+                                                <constraint firstItem="PtN-UY-lLV" firstAttribute="top" secondItem="33c-a3-DBK" secondAttribute="top" constant="30" id="ELN-Uo-CkB"/>
+                                                <constraint firstAttribute="bottom" secondItem="aSw-1F-SNW" secondAttribute="bottom" constant="24" id="M05-Hq-LLR"/>
+                                                <constraint firstAttribute="trailing" secondItem="PtN-UY-lLV" secondAttribute="trailing" constant="72.5" id="YeC-8A-VFB"/>
+                                                <constraint firstItem="Xyt-27-Dpz" firstAttribute="top" secondItem="33c-a3-DBK" secondAttribute="top" constant="49" id="fLl-1W-pqk"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xyt-27-Dpz" secondAttribute="bottom" constant="74" id="h1t-vR-YTI"/>
+                                                <constraint firstAttribute="trailing" secondItem="aSw-1F-SNW" secondAttribute="trailing" constant="66" id="i0F-zW-UVg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="id" destination="PtN-UY-lLV" id="n2L-bf-lMf"/>
+                                            <outlet property="title" destination="Xyt-27-Dpz" id="kKz-Vp-yGO"/>
+                                            <outlet property="userId" destination="aSw-1F-SNW" id="ffd-Wh-941"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lp5-Dl-gxC" secondAttribute="trailing" id="Jla-bL-9Ea"/>
+                            <constraint firstItem="Lp5-Dl-gxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lgw-3g-sgn"/>
+                            <constraint firstItem="Lp5-Dl-gxC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RzM-oG-5Ld"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lp5-Dl-gxC" secondAttribute="bottom" id="U87-d6-09r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableVC" destination="Lp5-Dl-gxC" id="Pgv-QY-mkI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
